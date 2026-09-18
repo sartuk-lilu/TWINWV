@@ -1,0 +1,2379 @@
+{
+    "en": {
+        "ui": {
+            "menu_title": "TWINWV",
+            "section_general": "General Settings",
+            "gs_language_header": "Language",
+            "gs_equipment_header": "Equipment",
+            "gs_remove_job_armor": "Remove Job Requirements (Armor)",
+            "gs_remove_job_armor_tip": "Lets you equip any armor regardless of vocation. Reverts when turned off.",
+            "gs_remove_job_weapon": "Remove Job Requirements (Weapons)",
+            "gs_remove_job_weapon_tip": "Same, for weapons.",
+            "gs_auto_remember": "Auto-remember weapon on equip",
+            "gs_auto_remember_tip": "Automatically re-saves your weapon preset whenever you change weapons in the equip menu.",
+            "gs_unlock_vocation": "Auto-unlock vocation if not learned",
+            "gs_unlock_vocation_tip": "Marks the vocation as unlocked before switching, if it isn't yet.",
+            "gs_extra_skill_hotkeys_header": "Extra Skill Hotkeys",
+            "gs_extra_skill_hotkeys_note": "Hold Base + Modifier to swap in extra skills.",
+            "gs_extra_base_group": "Base",
+            "gs_extra_seta_group": "Modifier",
+            "section_vocations": "Vocation Switching & Extra Skills",
+            "voc_key_label": "Switch key",
+            "voc_preset_status_fmt": "Weapon preset: %s",
+            "voc_preset_saved_fmt": "%d item(s) remembered",
+            "voc_preset_empty": "(none yet - weapon will be unequipped on switch)",
+            "extra_skills_header": "Extra Skills",
+            "extra_set_a_fmt": "Extra Skills (+ %s)",
+            "slot_fmt": "Slot %d",
+            "learned_warning": "Could not detect which skills you've learned for this vocation - showing the full list. Picking an unlearned skill may silently do nothing until you learn it.",
+            "section_icon": "Vocation Icon",
+            "icon_enabled": "Show icon",
+            "icon_anchor": "Anchor",
+            "icon_offset_x": "Offset from anchor - X (px)",
+            "icon_offset_y": "Offset from anchor - Y (px)",
+            "icon_scale": "Scale (%)",
+            "icon_flash": "Flash a bigger icon on switch",
+            "icon_flash_scale": "Flash size (% bigger than Scale above)",
+            "icon_flash_duration": "Flash duration (frames)",
+            "voc_armor_preset_status_fmt": "Armor preset: %s",
+            "voc_armor_preset_empty": "(none yet - armor will be unequipped on switch)",
+            "gs_auto_remember_armor": "Auto-remember armor on equip",
+            "gs_auto_remember_armor_tip": "Same as weapons, for armor (Head/Body/Leg/Mantle/Mask).",
+            "gs_auto_remember_rings": "Auto-remember rings on equip",
+            "gs_auto_remember_rings_tip": "Same as weapons, for rings.",
+            "voc_rings_preset_status_fmt": "Rings preset: %s",
+            "voc_rings_preset_empty": "(none yet - rings will be unequipped on switch)",
+            "icon_position_header": "Position & Scale",
+            "icon_position_desc": "Where the vocation icon appears on screen and how big it is.",
+            "icon_flash_header": "Flash on Switch",
+            "icon_flash_desc": "Briefly grows the icon bigger for a moment whenever you change vocation.",
+            "gs_cycle_hotkeys_header": "Cycle Vocation Hotkeys",
+            "gs_cycle_hotkeys_note": "Cycle through vocations in the Cycle order",
+            "gs_cycle_enable": "Enable vocation cycling",
+            "gs_cycle_enable_tip": "Enables the Prev/Next hotkeys below. Only vocations with a Cycle order are included.",
+            "gs_cycle_prev_group": "Prev",
+            "gs_cycle_next_group": "Next",
+            "voc_cycle_order_label": "Cycle order",
+            "voc_cycle_order_tip": "Position in the Prev/Next cycle. 0 = excluded.",
+            "gs_rearm_effect_enable": "Enable Rearmament Effect",
+            "gs_rearm_effect_enable_tip": "Plays the weapon-draw flourish after switching, without entering Warfarer. May glitch on some animations.",
+            "gs_equip_requirements_header": "Equipment Requirements",
+            "gs_auto_remember_header": "Auto-remember Equipment",
+            "gs_rearm_effect_subheader": "Rearmament Effect",
+            "gs_vocation_subheader": "Vocation",
+            "gs_extra_direct_cast_header": "Quick Cast Extra Skills",
+            "gs_extra_direct_cast_enable": "Use hotkeys for Extra Skills",
+            "gs_extra_direct_cast_broken_intro": "Skills below don't work via Quick Cast - set them in normal slots via the Vocation NPC instead:",
+            "gs_extra_direct_cast_broken_warrior_name": "Warrior",
+            "gs_extra_direct_cast_broken_warrior_skills": "Catapult Launch, Arc of Might",
+            "gs_extra_direct_cast_broken_mystic_spearhand_name": "Mystic Spearhand",
+            "gs_extra_direct_cast_broken_mystic_spearhand_skills": "Seching Storm",
+            "gs_extra_direct_cast_broken_magick_archer_name": "Magick Archer",
+            "gs_extra_direct_cast_broken_magick_archer_skills": "Sagittate Avalanche"
+        },
+        "skills": [
+            {
+                "id": 0,
+                "name": "— None —"
+            },
+            {
+                "id": 1,
+                "name": "Burst Strike"
+            },
+            {
+                "id": 2,
+                "name": "Cloudward Slash"
+            },
+            {
+                "id": 3,
+                "name": "Shield Pummel"
+            },
+            {
+                "id": 4,
+                "name": "Full Moon Slash"
+            },
+            {
+                "id": 5,
+                "name": "Launchboard"
+            },
+            {
+                "id": 6,
+                "name": "Shield Drum"
+            },
+            {
+                "id": 7,
+                "name": "Gutting Skewer"
+            },
+            {
+                "id": 8,
+                "name": "Hindsight Sweep"
+            },
+            {
+                "id": 9,
+                "name": "Flawless Guard"
+            },
+            {
+                "id": 10,
+                "name": "Vengeful Slash"
+            },
+            {
+                "id": 11,
+                "name": "Divine Defense"
+            },
+            {
+                "id": 12,
+                "name": "Riotous Fury"
+            },
+            {
+                "id": 13,
+                "name": "Manifold Shot"
+            },
+            {
+                "id": 14,
+                "name": "Cascade Shot"
+            },
+            {
+                "id": 15,
+                "name": "Deathly Arrow"
+            },
+            {
+                "id": 16,
+                "name": "Lyncean Sight"
+            },
+            {
+                "id": 17,
+                "name": "Erupting Shot"
+            },
+            {
+                "id": 18,
+                "name": "Deluging Shot"
+            },
+            {
+                "id": 19,
+                "name": "Incendiary Shot"
+            },
+            {
+                "id": 20,
+                "name": "Nocuous Shot"
+            },
+            {
+                "id": 21,
+                "name": "Tempest Shot"
+            },
+            {
+                "id": 22,
+                "name": "Spiral Arrow"
+            },
+            {
+                "id": 23,
+                "name": "Heavenly Shot"
+            },
+            {
+                "id": 24,
+                "name": "High Flagration"
+            },
+            {
+                "id": 25,
+                "name": "High Levin"
+            },
+            {
+                "id": 26,
+                "name": "High Frigor"
+            },
+            {
+                "id": 27,
+                "name": "High Spellhold"
+            },
+            {
+                "id": 28,
+                "name": "High Palladium"
+            },
+            {
+                "id": 29,
+                "name": "Fire Affinity"
+            },
+            {
+                "id": 30,
+                "name": "Ice Affnity"
+            },
+            {
+                "id": 31,
+                "name": "Lighting Affnity"
+            },
+            {
+                "id": 32,
+                "name": "High Empyrean"
+            },
+            {
+                "id": 33,
+                "name": "High Halidom"
+            },
+            {
+                "id": 34,
+                "name": "High Celerity"
+            },
+            {
+                "id": 35,
+                "name": "Argent Succor"
+            },
+            {
+                "id": 36,
+                "name": "High Solemnity"
+            },
+            {
+                "id": 37,
+                "name": "Celestial Paean"
+            },
+            {
+                "id": 38,
+                "name": "Cutting Wind"
+            },
+            {
+                "id": 39,
+                "name": "Skull Splitter"
+            },
+            {
+                "id": 40,
+                "name": "Implicate"
+            },
+            {
+                "id": 41,
+                "name": "Masterful Kill"
+            },
+            {
+                "id": 42,
+                "name": "Formless Feint"
+            },
+            {
+                "id": 43,
+                "name": "Draw and Quarter"
+            },
+            {
+                "id": 44,
+                "name": "Ignited Blades"
+            },
+            {
+                "id": 45,
+                "name": "Smoke Shroud"
+            },
+            {
+                "id": 46,
+                "name": "Powder Blast"
+            },
+            {
+                "id": 47,
+                "name": "Concussive Leap"
+            },
+            {
+                "id": 48,
+                "name": "Shadow Veil"
+            },
+            {
+                "id": 49,
+                "name": "Plunder"
+            },
+            {
+                "id": 50,
+                "name": "Ravening Lunge"
+            },
+            {
+                "id": 51,
+                "name": "Razing Sweep"
+            },
+            {
+                "id": 52,
+                "name": "Heavenward Sunder"
+            },
+            {
+                "id": 53,
+                "name": "Windstorm Slash"
+            },
+            {
+                "id": 54,
+                "name": "Diluvian Strike"
+            },
+            {
+                "id": 55,
+                "name": "Tidal Wrath"
+            },
+            {
+                "id": 56,
+                "name": "Roar"
+            },
+            {
+                "id": 57,
+                "name": "Mountain Breaker"
+            },
+            {
+                "id": 58,
+                "name": "Indomitable Lash"
+            },
+            {
+                "id": 59,
+                "name": "Inspirit"
+            },
+            {
+                "id": 60,
+                "name": "Catapult Launch"
+            },
+            {
+                "id": 61,
+                "name": "Arc of Might"
+            },
+            {
+                "id": 62,
+                "name": "High Salamander"
+            },
+            {
+                "id": 63,
+                "name": "High Hagol"
+            },
+            {
+                "id": 64,
+                "name": "High Thundermine"
+            },
+            {
+                "id": 65,
+                "name": "High Decanter"
+            },
+            {
+                "id": 66,
+                "name": "High Seism"
+            },
+            {
+                "id": 67,
+                "name": "Augural Flare"
+            },
+            {
+                "id": 68,
+                "name": "Meteoron"
+            },
+            {
+                "id": 69,
+                "name": "Maelstorm"
+            },
+            {
+                "id": 70,
+                "name": "Devout Offringe"
+            },
+            {
+                "id": 71,
+                "name": "Unto Heven"
+            },
+            {
+                "id": 72,
+                "name": "Ravinour's Hond"
+            },
+            {
+                "id": 73,
+                "name": "Dragoun's Foin"
+            },
+            {
+                "id": 74,
+                "name": "Mirour Shelde"
+            },
+            {
+                "id": 75,
+                "name": "Seching Storm"
+            },
+            {
+                "id": 76,
+                "name": "Skiedragoun's Feste"
+            },
+            {
+                "id": 77,
+                "name": "Magike Speregonne"
+            },
+            {
+                "id": 78,
+                "name": "Moment's Charge"
+            },
+            {
+                "id": 79,
+                "name": "Wild Furie"
+            },
+            {
+                "id": 80,
+                "name": "Blazefang Arrow"
+            },
+            {
+                "id": 81,
+                "name": "Candescent Orb"
+            },
+            {
+                "id": 82,
+                "name": "Frosthunter Bolt"
+            },
+            {
+                "id": 83,
+                "name": "Arctic Bolt"
+            },
+            {
+                "id": 84,
+                "name": "Boltchain Stake"
+            },
+            {
+                "id": 85,
+                "name": "Ricochet Hunter"
+            },
+            {
+                "id": 86,
+                "name": "Lifetaking Arrow"
+            },
+            {
+                "id": 87,
+                "name": "Recovery Arrow"
+            },
+            {
+                "id": 88,
+                "name": "Fortalice"
+            },
+            {
+                "id": 89,
+                "name": "Soporific Bolt"
+            },
+            {
+                "id": 90,
+                "name": "Sagittate Avalanche"
+            },
+            {
+                "id": 91,
+                "name": "Martyr's Bolt"
+            },
+            {
+                "id": 92,
+                "name": "Illusive Divider"
+            },
+            {
+                "id": 93,
+                "name": "Tricky Terrace"
+            },
+            {
+                "id": 94,
+                "name": "Visitant Aura"
+            },
+            {
+                "id": 95,
+                "name": "Suffocating Shroud"
+            },
+            {
+                "id": 96,
+                "name": "Binding Effigy"
+            },
+            {
+                "id": 97,
+                "name": "Aromatic Resurgence"
+            },
+            {
+                "id": 98,
+                "name": "Fragrant Alarum"
+            },
+            {
+                "id": 99,
+                "name": "Dragon's Delusion"
+            },
+            {
+                "id": 101,
+                "name": "Blades of the Pyre"
+            }
+        ]
+    },
+    "ru": {
+        "ui": {
+            "menu_title": "TWINWV",
+            "section_general": "Общие настройки",
+            "gs_language_header": "Язык",
+            "gs_equipment_header": "Экипировка",
+            "gs_remove_job_armor": "Снять требования по профессии (Броня)",
+            "gs_remove_job_armor_tip": "Позволяет носить любую броню независимо от профессии. Восстанавливается при выключении.",
+            "gs_remove_job_weapon": "Снять требования по профессии (Оружие)",
+            "gs_remove_job_weapon_tip": "То же самое, для оружия.",
+            "gs_auto_remember": "Запоминать оружие при экипировке",
+            "gs_auto_remember_tip": "Автоматически пересохраняет пресет оружия при смене оружия в меню экипировки.",
+            "gs_unlock_vocation": "Авто-разблокировка профессии, если не изучена",
+            "gs_unlock_vocation_tip": "Помечает профессию как разблокированную перед переключением, если она ещё не открыта.",
+            "gs_extra_skill_hotkeys_header": "Хоткеи доп. навыков",
+            "gs_extra_skill_hotkeys_note": "Удерживайте Base + модификатор, чтобы подставить доп. навыки.",
+            "gs_extra_base_group": "База",
+            "gs_extra_seta_group": "Модификатор",
+            "section_vocations": "Переключение профессий и доп. навыки",
+            "voc_key_label": "Клавиша переключения",
+            "voc_preset_status_fmt": "Пресет оружия: %s",
+            "voc_preset_saved_fmt": "запомнено предметов: %d",
+            "voc_preset_empty": "(пока нет - оружие будет снято при переключении)",
+            "extra_skills_header": "Доп. навыки",
+            "extra_set_a_fmt": "Доп. навыки (+ %s)",
+            "slot_fmt": "Слот %d",
+            "learned_warning": "Не удалось определить, какие навыки вы изучили для этой профессии - показан полный список. Выбор неизученного навыка может ничего не сделать, пока вы его не изучите.",
+            "section_icon": "Иконка профессии",
+            "icon_enabled": "Показывать иконку",
+            "icon_anchor": "Привязка",
+            "icon_offset_x": "Смещение от привязки - X (px)",
+            "icon_offset_y": "Смещение от привязки - Y (px)",
+            "icon_scale": "Масштаб (%)",
+            "icon_flash": "Увеличивать иконку при переключении",
+            "icon_flash_scale": "Размер вспышки (% сверх Масштаба выше)",
+            "icon_flash_duration": "Длительность вспышки (кадры)",
+            "voc_armor_preset_status_fmt": "Пресет брони: %s",
+            "voc_armor_preset_empty": "(пока нет - броня будет снята при переключении)",
+            "gs_auto_remember_armor": "Запоминать броню при экипировке",
+            "gs_auto_remember_armor_tip": "То же самое, что для оружия, но для брони (Head/Body/Leg/плащ/маска).",
+            "gs_auto_remember_rings": "Запоминать кольца при экипировке",
+            "gs_auto_remember_rings_tip": "То же самое, что для оружия, но для колец.",
+            "voc_rings_preset_status_fmt": "Пресет колец: %s",
+            "voc_rings_preset_empty": "(пока нет - кольца будут сняты при переключении)",
+            "icon_position_header": "Позиция и масштаб",
+            "icon_position_desc": "Где на экране появляется иконка профессии и насколько она большая.",
+            "icon_flash_header": "Вспышка при переключении",
+            "icon_flash_desc": "На мгновение увеличивает иконку каждый раз при смене профессии.",
+            "gs_cycle_hotkeys_header": "Хоткеи циклического переключения",
+            "gs_cycle_hotkeys_note": "Листает профессии по порядку Cycle order",
+            "gs_cycle_enable": "Включить циклическое переключение",
+            "gs_cycle_enable_tip": "Включает хоткеи Prev/Next ниже. В цикл попадают только профессии с выставленным Cycle order.",
+            "gs_cycle_prev_group": "Prev",
+            "gs_cycle_next_group": "Next",
+            "voc_cycle_order_label": "Cycle order",
+            "voc_cycle_order_tip": "Позиция в цикле Prev/Next. 0 = не участвует.",
+            "gs_rearm_effect_enable": "Включить эффект довооружения",
+            "gs_rearm_effect_enable_tip": "Проигрывает флеш обнажения оружия после переключения, без входа в Warfarer. Может глючить на некоторых анимациях.",
+            "gs_equip_requirements_header": "Требования к экипировке",
+            "gs_auto_remember_header": "Автозапоминание экипировки",
+            "gs_rearm_effect_subheader": "Эффект довооружения",
+            "gs_vocation_subheader": "Профессия",
+            "gs_extra_direct_cast_header": "Быстрый каст доп. скиллов",
+            "gs_extra_direct_cast_enable": "Хоткеи для доп. скиллов",
+            "gs_extra_direct_cast_broken_intro": "Скиллы ниже не работают через Quick Cast - ставьте их в обычные слоты через NPC профессии:",
+            "gs_extra_direct_cast_broken_warrior_name": "Воин",
+            "gs_extra_direct_cast_broken_warrior_skills": "Catapult Launch, Arc of Might",
+            "gs_extra_direct_cast_broken_mystic_spearhand_name": "Мистик-копейщик",
+            "gs_extra_direct_cast_broken_mystic_spearhand_skills": "Seching Storm",
+            "gs_extra_direct_cast_broken_magick_archer_name": "Маг-лучник",
+            "gs_extra_direct_cast_broken_magick_archer_skills": "Sagittate Avalanche"
+        },
+        "skills": [
+            {
+                "id": 0,
+                "name": "— None —"
+            },
+            {
+                "id": 1,
+                "name": "Взрывной удар"
+            },
+            {
+                "id": 2,
+                "name": "Облачный разрез"
+            },
+            {
+                "id": 3,
+                "name": "Двойной удар щитом"
+            },
+            {
+                "id": 4,
+                "name": "Разрез-полнолуние"
+            },
+            {
+                "id": 5,
+                "name": "Пусковая площадка"
+            },
+            {
+                "id": 6,
+                "name": "Щит-барабан"
+            },
+            {
+                "id": 7,
+                "name": "Клинок для потрошения"
+            },
+            {
+                "id": 8,
+                "name": "Взмах с уклонением"
+            },
+            {
+                "id": 9,
+                "name": "Идеальная оборона"
+            },
+            {
+                "id": 10,
+                "name": "Мстительный разрез"
+            },
+            {
+                "id": 11,
+                "name": "Божественная защита"
+            },
+            {
+                "id": 12,
+                "name": "Ярость бунтарей"
+            },
+            {
+                "id": 13,
+                "name": "Ливень стрел"
+            },
+            {
+                "id": 14,
+                "name": "Веерный выстрел"
+            },
+            {
+                "id": 15,
+                "name": "Смертельная стрела"
+            },
+            {
+                "id": 16,
+                "name": "Орлиный взгляд"
+            },
+            {
+                "id": 17,
+                "name": "Взрывной выстрел"
+            },
+            {
+                "id": 18,
+                "name": "Затапливающий выстрел"
+            },
+            {
+                "id": 19,
+                "name": "Зажигательный выстрел"
+            },
+            {
+                "id": 20,
+                "name": "Ядовитый выстрел"
+            },
+            {
+                "id": 21,
+                "name": "Ураган Стрел"
+            },
+            {
+                "id": 22,
+                "name": "Спиральная стрела"
+            },
+            {
+                "id": 23,
+                "name": "Небесный выстрел"
+            },
+            {
+                "id": 24,
+                "name": "Великое пламя"
+            },
+            {
+                "id": 25,
+                "name": "Великая вспышка"
+            },
+            {
+                "id": 26,
+                "name": "Великий мороз"
+            },
+            {
+                "id": 27,
+                "name": "Идеальная память"
+            },
+            {
+                "id": 28,
+                "name": "Улучшенный оберег"
+            },
+            {
+                "id": 29,
+                "name": "Близость огня"
+            },
+            {
+                "id": 30,
+                "name": "Близость льда"
+            },
+            {
+                "id": 31,
+                "name": "Близость молнии"
+            },
+            {
+                "id": 32,
+                "name": "Великий эмпирей"
+            },
+            {
+                "id": 33,
+                "name": "Верховная святыня"
+            },
+            {
+                "id": 34,
+                "name": "Великое проворство"
+            },
+            {
+                "id": 35,
+                "name": "Серебряная поддержка"
+            },
+            {
+                "id": 36,
+                "name": "Великое безмолвие"
+            },
+            {
+                "id": 37,
+                "name": "Песнь небес"
+            },
+            {
+                "id": 38,
+                "name": "Режущий ветер"
+            },
+            {
+                "id": 39,
+                "name": "Крушитель черепов"
+            },
+            {
+                "id": 40,
+                "name": "Капкан"
+            },
+            {
+                "id": 41,
+                "name": "Мастерское убийство"
+            },
+            {
+                "id": 42,
+                "name": "Ложный маневр"
+            },
+            {
+                "id": 43,
+                "name": "Тяни и четвертуй"
+            },
+            {
+                "id": 44,
+                "name": "Огненные клинки"
+            },
+            {
+                "id": 45,
+                "name": "Дымовой покров"
+            },
+            {
+                "id": 46,
+                "name": "Пороховой взрыв"
+            },
+            {
+                "id": 47,
+                "name": "Взрывной прыжок"
+            },
+            {
+                "id": 48,
+                "name": "Теневая вуаль"
+            },
+            {
+                "id": 49,
+                "name": "Грабитель"
+            },
+            {
+                "id": 50,
+                "name": "Яростный взмах"
+            },
+            {
+                "id": 51,
+                "name": "Разрушительный выпад"
+            },
+            {
+                "id": 52,
+                "name": "Удар в небеса"
+            },
+            {
+                "id": 53,
+                "name": "Ураганный разрез"
+            },
+            {
+                "id": 54,
+                "name": "Штормовой удар"
+            },
+            {
+                "id": 55,
+                "name": "Приливный гнев"
+            },
+            {
+                "id": 56,
+                "name": "Рык"
+            },
+            {
+                "id": 57,
+                "name": "Крушитель гор"
+            },
+            {
+                "id": 58,
+                "name": "Неукротимая злоба"
+            },
+            {
+                "id": 59,
+                "name": "Возвращение души"
+            },
+            {
+                "id": 60,
+                "name": "Запуск из катапульты"
+            },
+            {
+                "id": 61,
+                "name": "Мощная дуга"
+            },
+            {
+                "id": 62,
+                "name": "Великая Саламандра"
+            },
+            {
+                "id": 63,
+                "name": "Великий град"
+            },
+            {
+                "id": 64,
+                "name": "Великий раскат грома"
+            },
+            {
+                "id": 65,
+                "name": "Великий вампиризм"
+            },
+            {
+                "id": 66,
+                "name": "Великое землетрясение"
+            },
+            {
+                "id": 67,
+                "name": "Вспышка знамения"
+            },
+            {
+                "id": 68,
+                "name": "Метеор"
+            },
+            {
+                "id": 69,
+                "name": "Водоворот"
+            },
+            {
+                "id": 70,
+                "name": "Праведный дар"
+            },
+            {
+                "id": 71,
+                "name": "Прямиком в Рай"
+            },
+            {
+                "id": 72,
+                "name": "Жадная рука"
+            },
+            {
+                "id": 73,
+                "name": "Драконий выпад"
+            },
+            {
+                "id": 74,
+                "name": "Зеркальный щит"
+            },
+            {
+                "id": 75,
+                "name": "Летящий шторм"
+            },
+            {
+                "id": 76,
+                "name": "Клык дракона"
+            },
+            {
+                "id": 77,
+                "name": "Магический бросок"
+            },
+            {
+                "id": 78,
+                "name": "Моментальный разряд"
+            },
+            {
+                "id": 79,
+                "name": "Дикий гнев"
+            },
+            {
+                "id": 80,
+                "name": "Стрела пылающего клыка"
+            },
+            {
+                "id": 81,
+                "name": "Ослепительная сфера"
+            },
+            {
+                "id": 82,
+                "name": "Удар морозного охотника"
+            },
+            {
+                "id": 83,
+                "name": "Арктический выстрел"
+            },
+            {
+                "id": 84,
+                "name": "Грозовой столб"
+            },
+            {
+                "id": 85,
+                "name": "Рикошетный охотник"
+            },
+            {
+                "id": 86,
+                "name": "Стрела душегуба"
+            },
+            {
+                "id": 87,
+                "name": "Стрела восстановления"
+            },
+            {
+                "id": 88,
+                "name": "Форт-застава"
+            },
+            {
+                "id": 89,
+                "name": "Усыпляющая стрела"
+            },
+            {
+                "id": 90,
+                "name": "Лавина стрел"
+            },
+            {
+                "id": 91,
+                "name": "Стрела мученика"
+            },
+            {
+                "id": 92,
+                "name": "Призрачный разделитель"
+            },
+            {
+                "id": 93,
+                "name": "Каверзная насыпь"
+            },
+            {
+                "id": 94,
+                "name": "Аура гостя"
+            },
+            {
+                "id": 95,
+                "name": "Удушающая пелена"
+            },
+            {
+                "id": 96,
+                "name": "Связывающий образ"
+            },
+            {
+                "id": 97,
+                "name": "Ароматное возрождение"
+            },
+            {
+                "id": 98,
+                "name": "Ароматная дымка"
+            },
+            {
+                "id": 99,
+                "name": "Иллюзия дракона"
+            },
+            {
+                "id": 101,
+                "name": "Клинки пламени"
+            }
+        ]
+    },
+    "ko": {
+        "ui": {
+            "menu_title": "TWINWV",
+            "section_general": "일반 설정",
+            "gs_language_header": "언어",
+            "gs_equipment_header": "장비",
+            "gs_remove_job_armor": "직업 제한 해제 (방어구)",
+            "gs_remove_job_armor_tip": "로드된 app.ItemArmorParam 항목의 _Job 값을 65535(모든 직업)로 패치합니다. 게임 세션 전체에 적용되며, 끄면 복원됩니다.",
+            "gs_remove_job_weapon": "직업 제한 해제 (무기)",
+            "gs_remove_job_weapon_tip": "app.ItemWeaponParam에도 동일하게 적용됩니다.",
+            "gs_auto_remember": "장착 시 무기 자동 기억",
+            "gs_auto_remember_tip": "게임의 장비 메뉴로 무기를 바꿀 때마다, 현재 직업의 무기 프리셋을 다시 저장합니다. 끄면 무기에는 전혀 관여하지 않습니다 (자동 기억도, 전환 시 교체도 없음) - 직업/스킬만 바뀝니다.",
+            "gs_unlock_vocation": "미습득 직업 자동 해금",
+            "gs_unlock_vocation_tip": "대상 직업을 아직 트레이너에게서 해금하지 않았다면, 전환 전에 자격을 갖춘 것으로 표시합니다.",
+            "gs_extra_skill_hotkeys_header": "추가 스킬 단축키",
+            "gs_extra_skill_hotkeys_note": "Base + 보조 키를 누르고 있으면 추가 스킬로 바뀝니다.",
+            "gs_extra_base_group": "기본",
+            "gs_extra_seta_group": "보조 키",
+            "section_vocations": "직업 전환 및 추가 스킬",
+            "voc_key_label": "전환 키",
+            "voc_preset_status_fmt": "무기 프리셋: %s",
+            "voc_preset_saved_fmt": "%d개 항목 기억됨",
+            "voc_preset_empty": "(아직 없음 - 전환 시 무기가 해제됩니다)",
+            "extra_skills_header": "추가 스킬",
+            "extra_set_a_fmt": "추가 스킬 (+ %s)",
+            "slot_fmt": "슬롯 %d",
+            "learned_warning": "이 직업에서 습득한 스킬을 감지할 수 없어 전체 목록을 표시합니다. 습득하지 않은 스킬을 선택하면 습득할 때까지 아무 효과가 없을 수 있습니다.",
+            "section_icon": "직업 아이콘",
+            "icon_enabled": "아이콘 표시",
+            "icon_anchor": "고정 위치",
+            "icon_offset_x": "고정 위치로부터 오프셋 - X (px)",
+            "icon_offset_y": "고정 위치로부터 오프셋 - Y (px)",
+            "icon_scale": "크기 (%)",
+            "icon_flash": "전환 시 아이콘 확대 효과",
+            "icon_flash_scale": "확대 크기 (위 크기보다 % 더 크게)",
+            "icon_flash_duration": "확대 효과 지속시간 (프레임)",
+            "voc_armor_preset_status_fmt": "방어구 프리셋: %s",
+            "voc_armor_preset_empty": "(아직 없음 - 전환 시 방어구가 해제됩니다)",
+            "gs_auto_remember_armor": "장착 시 방어구 자동 기억",
+            "gs_auto_remember_armor_tip": "무기와 동일하지만 머리/몸/다리 방어구, 망토, 가면에 적용됩니다 - 직업마다 자신만의 세트를 기억합니다. 끄면 이 장비에는 전혀 관여하지 않습니다 (자동 기억도, 전환 시 교체도 없음).",
+            "gs_auto_remember_rings": "장착 시 반지 자동 기억",
+            "gs_auto_remember_rings_tip": "반지에 대해서만 동일하게 적용됩니다 - 직업별로 다른 반지를 쓰고 싶을 때(예: 마법사와 전사) 유용합니다. 끄면 반지에는 전혀 관여하지 않습니다.",
+            "voc_rings_preset_status_fmt": "반지 프리셋: %s",
+            "voc_rings_preset_empty": "(아직 없음 - 전환 시 반지가 해제됩니다)",
+            "icon_position_header": "위치 및 크기",
+            "icon_position_desc": "직업 아이콘이 화면 어디에 나타나는지, 얼마나 큰지 설정합니다.",
+            "icon_flash_header": "전환 시 확대 효과",
+            "icon_flash_desc": "직업을 바꿀 때마다 아이콘이 잠시 커집니다.",
+            "gs_cycle_hotkeys_header": "직업 순환 단축키",
+            "gs_cycle_hotkeys_note": "Cycle order 순서대로 직업을 순환합니다",
+            "gs_cycle_enable": "직업 순환 활성화",
+            "gs_cycle_enable_tip": "아래 Prev/Next를 켭니다. Cycle order가 설정된 직업(Vocation Switching 섹션)만 순환에 포함되며, None으로 남은 직업은 건너뜁니다.",
+            "gs_cycle_prev_group": "Prev",
+            "gs_cycle_next_group": "Next",
+            "voc_cycle_order_label": "Cycle order",
+            "voc_cycle_order_tip": "Prev/Next 순환(Cycle Vocation Hotkeys, General Settings)에서 이 직업의 위치입니다. 0 = None - 순환에서 제외됩니다. 각 위치는 한 번만 사용할 수 있으며, 중복 설정 시 다시 None으로 초기화됩니다.",
+            "gs_rearm_effect_enable": "재무장 효과 활성화",
+            "gs_rearm_effect_enable_tip": "프리셋이 적용된 직후 무기에 Job10WeaponManager:appearWeapon()을 호출합니다 - 워페어러로 전환하지 않고도 워페어러 스타일의 무기 구현 연출을 재생합니다. 실험적 기능: 특정 애니메이션 중 게임이 충돌할 수 있습니다 - 이 호출과 무관하게 무기 프리셋은 항상 그 직후 다시 적용되지만, 자신의 책임하에 활성화하세요. 기본적으로 켜져 있습니다.",
+            "gs_equip_requirements_header": "장비 요구 조건",
+            "gs_auto_remember_header": "장비 자동 기억",
+            "gs_rearm_effect_subheader": "재무장 효과",
+            "gs_vocation_subheader": "직업",
+            "gs_extra_direct_cast_enable": "추가 스킬용 핫키 사용 (실험적)",
+            "gs_extra_direct_cast_enable_tip": "Base+Modifier를 눌러 추가 스킬을 일반 슬롯에 교체하는 대신, 6개의 추가 스킬 슬롯 각각에 직접 시전하는 자체 핫키를 지정합니다. 매우 실험적이며 개발 중: 각 스킬의 애니메이션을 먼저 게임에서 확인하고 테스트해야 합니다 - 아직 안 된 스킬은 핫키를 눌러도 아무 일도 일어나지 않습니다 (로그 확인).",
+            "gs_extra_direct_cast_note": "개발 중 - 대부분의 스킬은 아직 설정되지 않아 핫키를 눌러도 아무 일도 일어나지 않습니다."
+        },
+        "skills": [
+            {
+                "id": 0,
+                "name": "— 없음 —"
+            },
+            {
+                "id": 1,
+                "name": "일섬찌르기 2"
+            },
+            {
+                "id": 2,
+                "name": "공렬참 2"
+            },
+            {
+                "id": 3,
+                "name": "쉴드 버스터 2"
+            },
+            {
+                "id": 4,
+                "name": "도려꿰기 2"
+            },
+            {
+                "id": 5,
+                "name": "공무의 방패 2"
+            },
+            {
+                "id": 6,
+                "name": "방패 유인 2"
+            },
+            {
+                "id": 7,
+                "name": "도려꿰기 2"
+            },
+            {
+                "id": 8,
+                "name": "돌려베기 2"
+            },
+            {
+                "id": 9,
+                "name": "플로리스 가드 2"
+            },
+            {
+                "id": 10,
+                "name": "카운터 슬래쉬 2"
+            },
+            {
+                "id": 11,
+                "name": "마스소울 2"
+            },
+            {
+                "id": 12,
+                "name": "퓨리오스 레이드"
+            },
+            {
+                "id": 13,
+                "name": "연속사격 2"
+            },
+            {
+                "id": 14,
+                "name": "부채쏘기 2"
+            },
+            {
+                "id": 15,
+                "name": "마무리사격 2"
+            },
+            {
+                "id": 16,
+                "name": "고요사격 2"
+            },
+            {
+                "id": 17,
+                "name": "화약화살소기 2"
+            },
+            {
+                "id": 18,
+                "name": "물적심 화살 쏘기 2"
+            },
+            {
+                "id": 19,
+                "name": "기름화살쏘기 2"
+            },
+            {
+                "id": 20,
+                "name": "독화살 쏘기 2"
+            },
+            {
+                "id": 21,
+                "name": "질풍사격 2"
+            },
+            {
+                "id": 22,
+                "name": "소용돌이 쏘기 2"
+            },
+            {
+                "id": 23,
+                "name": "귀신 쏘기"
+            },
+            {
+                "id": 24,
+                "name": "파이어스톰 2"
+            },
+            {
+                "id": 25,
+                "name": "썬더레인 2"
+            },
+            {
+                "id": 26,
+                "name": "프로스트 스파이크 2"
+            },
+            {
+                "id": 27,
+                "name": "스펠필링 2"
+            },
+            {
+                "id": 28,
+                "name": "에스코트 아니마 2"
+            },
+            {
+                "id": 29,
+                "name": "파이어 기프트 2"
+            },
+            {
+                "id": 30,
+                "name": "아이스 기프트 2"
+            },
+            {
+                "id": 31,
+                "name": "썬더 시프트 2"
+            },
+            {
+                "id": 32,
+                "name": "홀리스피어 2"
+            },
+            {
+                "id": 33,
+                "name": "큐어 스폿 2"
+            },
+            {
+                "id": 34,
+                "name": "헤이스트 스폿 2"
+            },
+            {
+                "id": 35,
+                "name": "어전트 리커버 2"
+            },
+            {
+                "id": 36,
+                "name": "포스트 사일런스 2"
+            },
+            {
+                "id": 37,
+                "name": "치어 오브 더 갓"
+            },
+            {
+                "id": 38,
+                "name": "칼바람 베기 2"
+            },
+            {
+                "id": 39,
+                "name": "단두대 2"
+            },
+            {
+                "id": 40,
+                "name": "끌어 당기기 2"
+            },
+            {
+                "id": 41,
+                "name": "흘리기 암살 2"
+            },
+            {
+                "id": 42,
+                "name": "허심의 극치"
+            },
+            {
+                "id": 43,
+                "name": "도려내 뽑기 2"
+            },
+            {
+                "id": 44,
+                "name": "대염인 2"
+            },
+            {
+                "id": 45,
+                "name": "연막 2"
+            },
+            {
+                "id": 46,
+                "name": "폭염선 2"
+            },
+            {
+                "id": 47,
+                "name": "폭풍 도약 2"
+            },
+            {
+                "id": 48,
+                "name": "은신 2"
+            },
+            {
+                "id": 49,
+                "name": "노획 2"
+            },
+            {
+                "id": 50,
+                "name": "전투신 찌르기 2"
+            },
+            {
+                "id": 51,
+                "name": "지평 베기 2"
+            },
+            {
+                "id": 52,
+                "name": "창천 베기 2"
+            },
+            {
+                "id": 53,
+                "name": "열풍참 2"
+            },
+            {
+                "id": 54,
+                "name": "대하 천공 2"
+            },
+            {
+                "id": 55,
+                "name": "밀물 떨치기 2"
+            },
+            {
+                "id": 56,
+                "name": "우렁찬 외침 2"
+            },
+            {
+                "id": 57,
+                "name": "대산사태 2"
+            },
+            {
+                "id": 58,
+                "name": "마인 베기 2"
+            },
+            {
+                "id": 59,
+                "name": "투지 발휘 2"
+            },
+            {
+                "id": 60,
+                "name": "공무의 어깨 2"
+            },
+            {
+                "id": 61,
+                "name": "퇴마검성참"
+            },
+            {
+                "id": 62,
+                "name": "샐러맨더 테일 2"
+            },
+            {
+                "id": 63,
+                "name": "블리자드 가이저 2"
+            },
+            {
+                "id": 64,
+                "name": "마인 볼트 2"
+            },
+            {
+                "id": 65,
+                "name": "라이프스틸 2"
+            },
+            {
+                "id": 66,
+                "name": "록 비트 2"
+            },
+            {
+                "id": 67,
+                "name": "개더링 플레어 2"
+            },
+            {
+                "id": 68,
+                "name": "볼텍스 레이저"
+            },
+            {
+                "id": 69,
+                "name": "메테오 폴"
+            },
+            {
+                "id": 70,
+                "name": "공물 바치기 2"
+            },
+            {
+                "id": 71,
+                "name": "절계보내기 2"
+            },
+            {
+                "id": 72,
+                "name": "탈취의 마수 2"
+            },
+            {
+                "id": 73,
+                "name": "비룡의 돌격 2"
+            },
+            {
+                "id": 74,
+                "name": "수호신의 옷 2"
+            },
+            {
+                "id": 75,
+                "name": "조준 마력 칼날 2"
+            },
+            {
+                "id": 76,
+                "name": "천룡의 송곳니 2"
+            },
+            {
+                "id": 77,
+                "name": "마창 발사 2"
+            },
+            {
+                "id": 78,
+                "name": "순간 차지 2"
+            },
+            {
+                "id": 79,
+                "name": "마구 물어뜯기"
+            },
+            {
+                "id": 80,
+                "name": "교염마살 2"
+            },
+            {
+                "id": 81,
+                "name": "천조마구 2"
+            },
+            {
+                "id": 82,
+                "name": "냉추마탄 2"
+            },
+            {
+                "id": 83,
+                "name": "빙괴마창 2"
+            },
+            {
+                "id": 84,
+                "name": "뇌쇄마항 2"
+            },
+            {
+                "id": 85,
+                "name": "도탄마종 2"
+            },
+            {
+                "id": 86,
+                "name": "전명마궁 2"
+            },
+            {
+                "id": 87,
+                "name": "명환마궁 2"
+            },
+            {
+                "id": 88,
+                "name": "항반마순 2"
+            },
+            {
+                "id": 89,
+                "name": "혼수마탄 2"
+            },
+            {
+                "id": 90,
+                "name": "무진마살 2"
+            },
+            {
+                "id": 91,
+                "name": "순신패마궁"
+            },
+            {
+                "id": 92,
+                "name": "미혹 벽의 연기 2"
+            },
+            {
+                "id": 93,
+                "name": "생시 바닥의 안개 2"
+            },
+            {
+                "id": 94,
+                "name": "영혼 분리의 허향 2"
+            },
+            {
+                "id": 95,
+                "name": "대확산의 연기 2"
+            },
+            {
+                "id": 96,
+                "name": "빙의하는 분신 2"
+            },
+            {
+                "id": 97,
+                "name": "분발의 열향 2"
+            },
+            {
+                "id": 98,
+                "name": "통찰의 형연 2"
+            },
+            {
+                "id": 99,
+                "name": "괴룡의 환영"
+            },
+            {
+                "id": 101,
+                "name": "절화초염인"
+            }
+        ]
+    },
+    "fr": {
+        "ui": {
+            "menu_title": "TWINWV",
+            "section_general": "Parametres generaux",
+            "gs_language_header": "Langue",
+            "gs_equipment_header": "Equipement",
+            "gs_remove_job_armor": "Retirer les restrictions de vocation (Armures)",
+            "gs_remove_job_armor_tip": "Modifie _Job = 65535 (toutes vocations) sur les entrees app.ItemArmorParam chargees. Affecte toute la session de jeu, restaure a la desactivation.",
+            "gs_remove_job_weapon": "Retirer les restrictions de vocation (Armes)",
+            "gs_remove_job_weapon_tip": "Idem, pour app.ItemWeaponParam.",
+            "gs_auto_remember": "Memoriser l'arme automatiquement a l'equipement",
+            "gs_auto_remember_tip": "A chaque changement d'arme via le menu d'equipement du jeu, le mod resauvegarde le preset d'arme de la vocation actuelle. Desactivez pour que le mod ne touche plus du tout aux armes (ni memorisation automatique, ni changement) - seuls vocation/competences changeront.",
+            "gs_unlock_vocation": "Debloquer automatiquement la vocation si non apprise",
+            "gs_unlock_vocation_tip": "Si la vocation ciblee n'a pas encore ete debloquee aupres du formateur, le mod la marque comme qualifiee avant le changement.",
+            "gs_extra_skill_hotkeys_header": "Raccourcis de competences supplementaires",
+            "gs_extra_skill_hotkeys_note": "Maintenez Base + Modificateur pour activer les competences supplementaires.",
+            "gs_extra_base_group": "Base",
+            "gs_extra_seta_group": "Modificateur",
+            "section_vocations": "Changement de vocation et competences supplementaires",
+            "voc_key_label": "Touche de changement",
+            "voc_preset_status_fmt": "Preset d'arme : %s",
+            "voc_preset_saved_fmt": "%d objet(s) memorise(s)",
+            "voc_preset_empty": "(aucun pour l'instant - l'arme sera retiree au changement)",
+            "extra_skills_header": "Competences supplementaires",
+            "extra_set_a_fmt": "Competences supplementaires (+ %s)",
+            "slot_fmt": "Emplacement %d",
+            "learned_warning": "Impossible de detecter les competences apprises pour cette vocation - la liste complete est affichee. Choisir une competence non apprise peut ne rien faire tant qu'elle n'est pas apprise.",
+            "section_icon": "Icone de vocation",
+            "icon_enabled": "Afficher l'icone",
+            "icon_anchor": "Ancrage",
+            "icon_offset_x": "Decalage depuis l'ancrage - X (px)",
+            "icon_offset_y": "Decalage depuis l'ancrage - Y (px)",
+            "icon_scale": "Echelle (%)",
+            "icon_flash": "Agrandir l'icone au changement",
+            "icon_flash_scale": "Taille de l'agrandissement (% de plus que l'echelle ci-dessus)",
+            "icon_flash_duration": "Duree de l'agrandissement (images)",
+            "voc_armor_preset_status_fmt": "Preset d'armure : %s",
+            "voc_armor_preset_empty": "(aucune pour l'instant - l'armure sera retiree au changement)",
+            "gs_auto_remember_armor": "Memoriser l'armure automatiquement a l'equipement",
+            "gs_auto_remember_armor_tip": "Comme pour les armes, mais pour l'armure Tete/Corps/Jambes, la cape et le masque - chaque vocation memorise son propre set. Desactivez pour que le mod ne touche plus du tout a cet equipement (ni memorisation automatique, ni changement).",
+            "gs_auto_remember_rings": "Memoriser les anneaux automatiquement a l'equipement",
+            "gs_auto_remember_rings_tip": "Meme principe, pour les anneaux uniquement - utile si votre build veut des anneaux differents par vocation (ex: Mage vs Guerrier). Desactivez pour que le mod ne touche plus du tout aux anneaux.",
+            "voc_rings_preset_status_fmt": "Preset d'anneaux : %s",
+            "voc_rings_preset_empty": "(aucun pour l'instant - les anneaux seront retires au changement)",
+            "icon_position_header": "Position et echelle",
+            "icon_position_desc": "Ou l'icone de vocation apparait a l'ecran et sa taille.",
+            "icon_flash_header": "Effet au changement",
+            "icon_flash_desc": "Agrandit brievement l'icone a chaque changement de vocation.",
+            "gs_cycle_hotkeys_header": "Raccourcis de cycle de vocation",
+            "gs_cycle_hotkeys_note": "Parcourt les vocations selon le Cycle order",
+            "gs_cycle_enable": "Activer le cycle de vocations",
+            "gs_cycle_enable_tip": "Active Prev/Next ci-dessous. Seules les vocations avec un Cycle order defini (section Vocation Switching) sont incluses - celles laissees a None sont ignorees.",
+            "gs_cycle_prev_group": "Prev",
+            "gs_cycle_next_group": "Next",
+            "voc_cycle_order_label": "Cycle order",
+            "voc_cycle_order_tip": "Position de cette vocation dans le cycle Prev/Next (Cycle Vocation Hotkeys, General Settings). 0 = None - exclue du cycle. Chaque position ne peut etre utilisee qu'une fois ; un doublon est reinitialise a None.",
+            "gs_rearm_effect_enable": "Activer l'effet de rearmement",
+            "gs_rearm_effect_enable_tip": "Appelle Job10WeaponManager:appearWeapon() sur votre arme juste apres l'application de votre preset - le meme effet de materialisation d'arme que le Vagueur, sans y entrer. EXPERIMENTAL : peut faire planter le jeu pendant certaines animations - votre preset d'arme est toujours reapplique juste apres quoi qu'il arrive, mais activez a vos risques. Active par defaut.",
+            "gs_equip_requirements_header": "Exigences d'equipement",
+            "gs_auto_remember_header": "Memorisation automatique de l'equipement",
+            "gs_rearm_effect_subheader": "Effet de rearmement",
+            "gs_vocation_subheader": "Vocation",
+            "gs_extra_direct_cast_enable": "Touches dediees pour les competences supplementaires (Experimental)",
+            "gs_extra_direct_cast_enable_tip": "Au lieu de maintenir Base+Modificateur pour echanger les competences supplementaires dans vos emplacements normaux, chacun des 6 emplacements a sa propre touche qui la lance directement. Tres experimental, en developpement : l'animation de chaque competence doit d'abord etre identifiee et testee en jeu - tant que ce n'est pas fait pour une competence, sa touche ne fera rien (voir le journal).",
+            "gs_extra_direct_cast_note": "En developpement - la plupart des competences ne sont pas encore configurees, leur touche ne fera rien pour l'instant."
+        },
+        "skills": [
+            {
+                "id": 0,
+                "name": "— Aucune —"
+            },
+            {
+                "id": 1,
+                "name": "Coup eclair"
+            },
+            {
+                "id": 2,
+                "name": "Tranche-ciel"
+            },
+            {
+                "id": 3,
+                "name": "Frappe au bouclier"
+            },
+            {
+                "id": 4,
+                "name": "Lune sanglante"
+            },
+            {
+                "id": 5,
+                "name": "Tremplin"
+            },
+            {
+                "id": 6,
+                "name": "Provocation"
+            },
+            {
+                "id": 7,
+                "name": "Embrocher"
+            },
+            {
+                "id": 8,
+                "name": "Ruade feroce"
+            },
+            {
+                "id": 9,
+                "name": "Garde sans faille"
+            },
+            {
+                "id": 10,
+                "name": "Attaque vengeresse"
+            },
+            {
+                "id": 11,
+                "name": "Defense divine"
+            },
+            {
+                "id": 12,
+                "name": "Fureur impetueuse"
+            },
+            {
+                "id": 13,
+                "name": "Tir groupe"
+            },
+            {
+                "id": 14,
+                "name": "Tir circulaire"
+            },
+            {
+                "id": 15,
+                "name": "Fleche funeste"
+            },
+            {
+                "id": 16,
+                "name": "Oeil de lynx"
+            },
+            {
+                "id": 17,
+                "name": "Tir explosif"
+            },
+            {
+                "id": 18,
+                "name": "Tir humidifiant"
+            },
+            {
+                "id": 19,
+                "name": "Tir huileux"
+            },
+            {
+                "id": 20,
+                "name": "Tir empoisonne"
+            },
+            {
+                "id": 21,
+                "name": "Pluie de fleches"
+            },
+            {
+                "id": 22,
+                "name": "Fleche tourbillon"
+            },
+            {
+                "id": 23,
+                "name": "Tir astral"
+            },
+            {
+                "id": 24,
+                "name": "Conflagratoion"
+            },
+            {
+                "id": 25,
+                "name": "Tempete electrique"
+            },
+            {
+                "id": 26,
+                "name": "Banquise"
+            },
+            {
+                "id": 27,
+                "name": "Retention"
+            },
+            {
+                "id": 28,
+                "name": "Rempart"
+            },
+            {
+                "id": 29,
+                "name": "Charme de feu"
+            },
+            {
+                "id": 30,
+                "name": "Charme de glace"
+            },
+            {
+                "id": 31,
+                "name": "Charme de foudre"
+            },
+            {
+                "id": 32,
+                "name": "Empyree"
+            },
+            {
+                "id": 33,
+                "name": "Sanctum magna"
+            },
+            {
+                "id": 34,
+                "name": "Promptitude"
+            },
+            {
+                "id": 35,
+                "name": "Grace argentee"
+            },
+            {
+                "id": 36,
+                "name": "Solennite"
+            },
+            {
+                "id": 37,
+                "name": "Hymne celeste"
+            },
+            {
+                "id": 38,
+                "name": "Morsure du vent"
+            },
+            {
+                "id": 39,
+                "name": "Brise-crane"
+            },
+            {
+                "id": 40,
+                "name": "Capture"
+            },
+            {
+                "id": 41,
+                "name": "Assassinat"
+            },
+            {
+                "id": 42,
+                "name": "Insaisissable"
+            },
+            {
+                "id": 43,
+                "name": "Coupe-boyaux"
+            },
+            {
+                "id": 44,
+                "name": "Langues de feu"
+            },
+            {
+                "id": 45,
+                "name": "Ecran de fumee"
+            },
+            {
+                "id": 46,
+                "name": "Poudre du chaos"
+            },
+            {
+                "id": 47,
+                "name": "Pas explosif"
+            },
+            {
+                "id": 48,
+                "name": "Voile d'ombre"
+            },
+            {
+                "id": 49,
+                "name": "Larcin"
+            },
+            {
+                "id": 50,
+                "name": "Charge du demon"
+            },
+            {
+                "id": 51,
+                "name": "Coup de bucheron"
+            },
+            {
+                "id": 52,
+                "name": "Dechirure celeste"
+            },
+            {
+                "id": 53,
+                "name": "Ouragan lacerant"
+            },
+            {
+                "id": 54,
+                "name": "Lame diluvienne"
+            },
+            {
+                "id": 55,
+                "name": "Dent pour dent"
+            },
+            {
+                "id": 56,
+                "name": "Rugissement"
+            },
+            {
+                "id": 57,
+                "name": "Retourne-montagne"
+            },
+            {
+                "id": 58,
+                "name": "Rage du demon"
+            },
+            {
+                "id": 59,
+                "name": "Volonte des justes"
+            },
+            {
+                "id": 60,
+                "name": "Catapulte humaine"
+            },
+            {
+                "id": 61,
+                "name": "Jugement sacre"
+            },
+            {
+                "id": 62,
+                "name": "Salamandre"
+            },
+            {
+                "id": 63,
+                "name": "Grele"
+            },
+            {
+                "id": 64,
+                "name": "Puits de foudre"
+            },
+            {
+                "id": 65,
+                "name": "Siphon"
+            },
+            {
+                "id": 66,
+                "name": "Cataclysme"
+            },
+            {
+                "id": 67,
+                "name": "Fulmination premeditee"
+            },
+            {
+                "id": 68,
+                "name": "Pluie de meteores"
+            },
+            {
+                "id": 69,
+                "name": "Maelstrom"
+            },
+            {
+                "id": 70,
+                "name": "Lancer telekinetique"
+            },
+            {
+                "id": 71,
+                "name": "Expulsion"
+            },
+            {
+                "id": 72,
+                "name": "Main avide"
+            },
+            {
+                "id": 73,
+                "name": "Percee du dragon"
+            },
+            {
+                "id": 74,
+                "name": "Voile divin"
+            },
+            {
+                "id": 75,
+                "name": "Lames spectrales"
+            },
+            {
+                "id": 76,
+                "name": "Plongeon du dragon"
+            },
+            {
+                "id": 77,
+                "name": "Gungnir"
+            },
+            {
+                "id": 78,
+                "name": "Transfert vital"
+            },
+            {
+                "id": 79,
+                "name": "Fougue sauvage"
+            },
+            {
+                "id": 80,
+                "name": "Fleche ignescente"
+            },
+            {
+                "id": 81,
+                "name": "Orbe incandescent"
+            },
+            {
+                "id": 82,
+                "name": "Pourchas frigorifiant"
+            },
+            {
+                "id": 83,
+                "name": "Grelon cyclopeen"
+            },
+            {
+                "id": 84,
+                "name": "Pieu foudroyant"
+            },
+            {
+                "id": 85,
+                "name": "Ricochet"
+            },
+            {
+                "id": 86,
+                "name": "Fleche vampirique"
+            },
+            {
+                "id": 87,
+                "name": "Cadeau de l ange"
+            },
+            {
+                "id": 88,
+                "name": "Egide vindicative"
+            },
+            {
+                "id": 89,
+                "name": "Tir sedatif"
+            },
+            {
+                "id": 90,
+                "name": "Averse sagitee"
+            },
+            {
+                "id": 91,
+                "name": "Carreau de martyr"
+            },
+            {
+                "id": 92,
+                "name": "Frontiere illusoire"
+            },
+            {
+                "id": 93,
+                "name": "Sol traitre"
+            },
+            {
+                "id": 94,
+                "name": "Encens de dissociation"
+            },
+            {
+                "id": 95,
+                "name": "Nuage d egarement"
+            },
+            {
+                "id": 96,
+                "name": "Effigie persecutrice"
+            },
+            {
+                "id": 97,
+                "name": "Encens du berserker"
+            },
+            {
+                "id": 98,
+                "name": "Fragrance d affut"
+            },
+            {
+                "id": 99,
+                "name": "Illusion du dragon"
+            },
+            {
+                "id": 101,
+                "name": "Lames du bucher"
+            }
+        ]
+    },
+    "zh": {
+        "ui": {
+            "menu_title": "TWINWV",
+            "section_general": "常规设置",
+            "gs_language_header": "语言",
+            "gs_equipment_header": "装备",
+            "gs_remove_job_armor": "解除职业限制（护甲）",
+            "gs_remove_job_armor_tip": "将已加载的 app.ItemArmorParam 条目的 _Job 修改为 65535（任意职业）。影响整个游戏会话，关闭后恢复。",
+            "gs_remove_job_weapon": "解除职业限制（武器）",
+            "gs_remove_job_weapon_tip": "对 app.ItemWeaponParam 同样处理。",
+            "gs_auto_remember": "装备时自动记住武器",
+            "gs_auto_remember_tip": "每当你通过游戏自身的装备菜单更换武器时，模组都会为当前职业重新保存武器预设。关闭后模组将完全不干涉武器（不自动记住，切换时也不更换）- 只会切换职业/技能。",
+            "gs_unlock_vocation": "未学习的职业自动解锁",
+            "gs_unlock_vocation_tip": "如果目标职业尚未在训练师处解锁，切换前模组会将其标记为已达标。",
+            "gs_extra_skill_hotkeys_header": "额外技能快捷键",
+            "gs_extra_skill_hotkeys_note": "按住 Base + 修饰键 可切换到额外技能。",
+            "gs_extra_base_group": "基础",
+            "gs_extra_seta_group": "修饰键",
+            "section_vocations": "职业切换与额外技能",
+            "voc_key_label": "切换按键",
+            "voc_preset_status_fmt": "武器预设：%s",
+            "voc_preset_saved_fmt": "已记住 %d 件物品",
+            "voc_preset_empty": "（暂无 - 切换时将卸下武器）",
+            "extra_skills_header": "额外技能",
+            "extra_set_a_fmt": "额外技能 (+ %s)",
+            "slot_fmt": "槽位 %d",
+            "learned_warning": "无法检测该职业已学习的技能 - 显示完整列表。选择未学习的技能在学会之前可能不会生效。",
+            "section_icon": "职业图标",
+            "icon_enabled": "显示图标",
+            "icon_anchor": "锚点",
+            "icon_offset_x": "锚点偏移 - X (px)",
+            "icon_offset_y": "锚点偏移 - Y (px)",
+            "icon_scale": "缩放 (%)",
+            "icon_flash": "切换时放大图标",
+            "icon_flash_scale": "放大幅度（比上方缩放大 %）",
+            "icon_flash_duration": "放大持续时间（帧）",
+            "voc_armor_preset_status_fmt": "护甲预设：%s",
+            "voc_armor_preset_empty": "（暂无 - 切换时将卸下护甲）",
+            "gs_auto_remember_armor": "装备时自动记住护甲",
+            "gs_auto_remember_armor_tip": "与武器相同，但针对头部/身体/腿部护甲、披风和面具 - 每个职业记住自己的一套。关闭后模组将完全不干涉这部分装备（不自动记住，切换时也不更换）。",
+            "gs_auto_remember_rings": "装备时自动记住戒指",
+            "gs_auto_remember_rings_tip": "同样的逻辑，仅用于戒指 - 如果你的build希望不同职业佩戴不同戒指（例如法师和战士），这很有用。关闭后模组将完全不干涉戒指。",
+            "voc_rings_preset_status_fmt": "戒指预设：%s",
+            "voc_rings_preset_empty": "（暂无 - 切换时将卸下戒指）",
+            "icon_position_header": "位置与缩放",
+            "icon_position_desc": "职业图标显示在屏幕的位置，以及它的大小。",
+            "icon_flash_header": "切换时的放大效果",
+            "icon_flash_desc": "每次切换职业时短暂放大图标。",
+            "gs_cycle_hotkeys_header": "职业循环快捷键",
+            "gs_cycle_hotkeys_note": "按 Cycle order 顺序循环切换职业",
+            "gs_cycle_enable": "启用职业循环",
+            "gs_cycle_enable_tip": "启用下方的 Prev/Next。只有设置了 Cycle order 的职业（Vocation Switching 部分）才会被包含在循环中 - 保留为 None 的职业会被跳过。",
+            "gs_cycle_prev_group": "Prev",
+            "gs_cycle_next_group": "Next",
+            "voc_cycle_order_label": "Cycle order",
+            "voc_cycle_order_tip": "该职业在 Prev/Next 循环（Cycle Vocation Hotkeys, General Settings）中的位置。0 = None - 不参与循环。每个位置只能使用一次，重复设置会被重置为 None。",
+            "gs_rearm_effect_enable": "启用重新武装效果",
+            "gs_rearm_effect_enable_tip": "在预设应用之后立即对你的武器调用 Job10WeaponManager:appearWeapon() - 旅法师风格的武器具现特效，但不会真正进入旅法师。实验性功能：在某些动画期间可能导致游戏崩溃 - 无论此调用做了什么，之后都会立即重新应用你的武器预设，但启用风险自负。默认开启。",
+            "gs_equip_requirements_header": "装备需求",
+            "gs_auto_remember_header": "自动记忆装备",
+            "gs_rearm_effect_subheader": "重新武装效果",
+            "gs_vocation_subheader": "职业",
+            "gs_extra_direct_cast_enable": "额外技能使用热键（实验性）",
+            "gs_extra_direct_cast_enable_tip": "不再需要按住 Base+修饰键 将额外技能替换到普通槽位，而是给6个额外技能槽各自绑定一个可以直接释放的热键。非常实验性，仍在开发中：需要先在游戏中确认并测试每个技能的动画 - 在完成之前，对应技能的热键不会有任何效果（请查看日志）。",
+            "gs_extra_direct_cast_note": "开发中 - 大多数技能尚未配置，目前按下热键不会有任何效果。"
+        },
+        "skills": [
+            {
+                "id": 0,
+                "name": "— 无技能 —"
+            },
+            {
+                "id": 1,
+                "name": "一闪突刺"
+            },
+            {
+                "id": 2,
+                "name": "空裂斩"
+            },
+            {
+                "id": 3,
+                "name": "盾牌猛击"
+            },
+            {
+                "id": 4,
+                "name": "圆月斩"
+            },
+            {
+                "id": 5,
+                "name": "舞空之盾"
+            },
+            {
+                "id": 6,
+                "name": "盾牌引诱"
+            },
+            {
+                "id": 7,
+                "name": "剜心之击"
+            },
+            {
+                "id": 8,
+                "name": "转向斩击"
+            },
+            {
+                "id": 9,
+                "name": "完美防御"
+            },
+            {
+                "id": 10,
+                "name": "反击劈砍"
+            },
+            {
+                "id": 11,
+                "name": "战神之魂"
+            },
+            {
+                "id": 12,
+                "name": "狂怒之刃"
+            },
+            {
+                "id": 13,
+                "name": "连续射击"
+            },
+            {
+                "id": 14,
+                "name": "扇形射击"
+            },
+            {
+                "id": 15,
+                "name": "终结射击"
+            },
+            {
+                "id": 16,
+                "name": "缩距射击"
+            },
+            {
+                "id": 17,
+                "name": "火药箭射击"
+            },
+            {
+                "id": 18,
+                "name": "濡湿箭射击"
+            },
+            {
+                "id": 19,
+                "name": "浸油箭射击"
+            },
+            {
+                "id": 20,
+                "name": "追毒箭射击"
+            },
+            {
+                "id": 21,
+                "name": "怒涛射击"
+            },
+            {
+                "id": 22,
+                "name": "漩涡射击"
+            },
+            {
+                "id": 23,
+                "name": "鬼神射击"
+            },
+            {
+                "id": 24,
+                "name": "火焰风暴"
+            },
+            {
+                "id": 25,
+                "name": "雷电暴雨"
+            },
+            {
+                "id": 26,
+                "name": "冰霜之矛"
+            },
+            {
+                "id": 27,
+                "name": "咒语填充"
+            },
+            {
+                "id": 28,
+                "name": "护卫之灵"
+            },
+            {
+                "id": 29,
+                "name": "火焰的馈赠"
+            },
+            {
+                "id": 30,
+                "name": "冰霜的馈赠"
+            },
+            {
+                "id": 31,
+                "name": "雷电的馈赠"
+            },
+            {
+                "id": 32,
+                "name": "神圣灵珠"
+            },
+            {
+                "id": 33,
+                "name": "纯净法阵"
+            },
+            {
+                "id": 34,
+                "name": "极速法阵"
+            },
+            {
+                "id": 35,
+                "name": "紧急恢复"
+            },
+            {
+                "id": 36,
+                "name": "强制沉默"
+            },
+            {
+                "id": 37,
+                "name": "神之鼓励"
+            },
+            {
+                "id": 38,
+                "name": "镰鼬风"
+            },
+            {
+                "id": 39,
+                "name": "断头台"
+            },
+            {
+                "id": 40,
+                "name": "拉近"
+            },
+            {
+                "id": 41,
+                "name": "格挡暗杀"
+            },
+            {
+                "id": 42,
+                "name": "心如明镜"
+            },
+            {
+                "id": 43,
+                "name": "剜刺穿透"
+            },
+            {
+                "id": 44,
+                "name": "带炎刃"
+            },
+            {
+                "id": 45,
+                "name": "烟幕"
+            },
+            {
+                "id": 46,
+                "name": "爆炎线"
+            },
+            {
+                "id": 47,
+                "name": "爆跳"
+            },
+            {
+                "id": 48,
+                "name": "隐身"
+            },
+            {
+                "id": 49,
+                "name": "强夺"
+            },
+            {
+                "id": 50,
+                "name": "战神突刺"
+            },
+            {
+                "id": 51,
+                "name": "地平斩"
+            },
+            {
+                "id": 52,
+                "name": "苍天斩"
+            },
+            {
+                "id": 53,
+                "name": "烈风斩"
+            },
+            {
+                "id": 54,
+                "name": "贯江"
+            },
+            {
+                "id": 55,
+                "name": "退潮"
+            },
+            {
+                "id": 56,
+                "name": "勇吼"
+            },
+            {
+                "id": 57,
+                "name": "山崩地裂"
+            },
+            {
+                "id": 58,
+                "name": "魔人斩"
+            },
+            {
+                "id": 59,
+                "name": "斗志昂扬"
+            },
+            {
+                "id": 60,
+                "name": "舞空跳肩"
+            },
+            {
+                "id": 61,
+                "name": "退魔剑圣斩"
+            },
+            {
+                "id": 62,
+                "name": "火灵之尾"
+            },
+            {
+                "id": 63,
+                "name": "暴雪涌泉"
+            },
+            {
+                "id": 64,
+                "name": "雷暴伏特"
+            },
+            {
+                "id": 65,
+                "name": "生命窃取"
+            },
+            {
+                "id": 66,
+                "name": "岩石之击"
+            },
+            {
+                "id": 67,
+                "name": "火焰集束"
+            },
+            {
+                "id": 68,
+                "name": "流星陨落"
+            },
+            {
+                "id": 69,
+                "name": "暴怒龙卷"
+            },
+            {
+                "id": 70,
+                "name": "献上供品"
+            },
+            {
+                "id": 71,
+                "name": "送往绝界"
+            },
+            {
+                "id": 72,
+                "name": "掠夺魔手"
+            },
+            {
+                "id": 73,
+                "name": "飞龙突刺"
+            },
+            {
+                "id": 74,
+                "name": "反弹神衣"
+            },
+            {
+                "id": 75,
+                "name": "追踪魔刃"
+            },
+            {
+                "id": 76,
+                "name": "天龙之牙"
+            },
+            {
+                "id": 77,
+                "name": "魔枪发射"
+            },
+            {
+                "id": 78,
+                "name": "屏息蓄力"
+            },
+            {
+                "id": 79,
+                "name": "狂乱啃噬"
+            },
+            {
+                "id": 80,
+                "name": "噬炎魔矢"
+            },
+            {
+                "id": 81,
+                "name": "天照魔球"
+            },
+            {
+                "id": 82,
+                "name": "冷追魔弹"
+            },
+            {
+                "id": 83,
+                "name": "冰块魔枪"
+            },
+            {
+                "id": 84,
+                "name": "雷锁魔桩"
+            },
+            {
+                "id": 85,
+                "name": "跳弹魔使"
+            },
+            {
+                "id": 86,
+                "name": "转命魔弓"
+            },
+            {
+                "id": 87,
+                "name": "返命魔弓"
+            },
+            {
+                "id": 88,
+                "name": "抗反魔盾"
+            },
+            {
+                "id": 89,
+                "name": "昏睡魔弹"
+            },
+            {
+                "id": 90,
+                "name": "无尽魔矢"
+            },
+            {
+                "id": 91,
+                "name": "殉身霸魔弓"
+            },
+            {
+                "id": 92,
+                "name": "幻壁之烟"
+            },
+            {
+                "id": 93,
+                "name": "朦胧地板"
+            },
+            {
+                "id": 94,
+                "name": "出窍虚香"
+            },
+            {
+                "id": 95,
+                "name": "广域迷烟"
+            },
+            {
+                "id": 96,
+                "name": "附身幻影"
+            },
+            {
+                "id": 97,
+                "name": "振奋烈香"
+            },
+            {
+                "id": 98,
+                "name": "察知炯烟"
+            },
+            {
+                "id": 99,
+                "name": "妖龙之幻"
+            },
+            {
+                "id": 101,
+                "name": "绝火超炎刃"
+            }
+        ]
+    }
+}
