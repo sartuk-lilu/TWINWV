@@ -19,7 +19,7 @@ Warfarer lets you mix in skills from any of the other 9 vocations - but only 5 o
 
 ## New: Quick Cast Extra Skills
 Bind each of your 6 Extra Skill slots to its own hotkey (default: Alpha1-6) that casts it directly - no more holding Base+Modifier first. Off by default; enable it in the settings under the new Quick Cast Extra Skills section.
-Covers 82 of 85 Extra Skills across all 9 vocations. Three skills have no safe direct-cast path and must still be set in normal slots via the Vocation NPC:
+Covers 96 of 100 Extra Skills across all 9 vocations. Three skills have no safe direct-cast path and must still be set in normal slots via the Vocation NPC:
 Warrior: Catapult Launch, Arc of Might
 Mystic Spearhand: Seching Storm
 Magick Archer: Sagittate Avalanche
