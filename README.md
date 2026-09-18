@@ -1,7 +1,7 @@
 # TWINWV
 TWINWV - True Warfarer is not a Warfarer Vocation (Vocation Swapper and Skills Switcher). Bind any of the 9 vocations to a hotkey and switch instantly. The mod automatically remembers whatever weapon, armor, and rings you had equipped on each vocation and puts them back on the moment you switch to it - no manual presets, nothing to save or load. On top of the standard 6 skill slots, you also get 6 extra skill slots per vocation.
 
-# TWINWV - True Vocation Switcher
+## TWINWV - True Vocation Switcher
 Warfarer lets you mix in skills from any of the other 9 vocations - but only 5 of them, and without the core class traits that normally come with those vocations (like the Thief's Footpad wall-jump). Warfarer can equip any of the 9 weapon types, but switching between them only cycles one direction through a fixed order instead of jumping straight to the one you want. On top of that, ALL vocations level up a little at a time instead of the one you actually play.
 
 **TWINWV skips Warfarer entirely.** Bind any of the 9 vocations to a hotkey (Shift+F1-F5 by default) and switch instantly. The mod automatically remembers whatever weapon, armor, and rings you had equipped on each vocation and puts them back on the moment you switch to it - no manual presets, nothing to save or load. On top of the standard 6 skill slots, you also get 6 extra skill slots, swapped in with modifier hotkey or bind special hotkeys. A vocation icon in the top-left corner of the screen (configurable) always shows - and switches with - whichever class you're currently on.
